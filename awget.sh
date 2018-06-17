@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-echo '
+echo -n '
 Please enter required version number.
 WARNING: There is no imput validation.
 '
@@ -8,7 +7,7 @@ read -p 'Required version: ' ver
 
 echo "Selected version is $ver."
 
-echo '
+echo -n '
 Please enter required packege type.
 1. RPM for CentOS
 2. DEB for AstraOS
@@ -32,7 +31,7 @@ url3="https://domain/$ver/3_packet.$pack"
 
 urls_selected=()
 
-echo '
+echo -n '
 Please select components you want to download:
 0. Everything
 1. Component1
